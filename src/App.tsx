@@ -1,9 +1,8 @@
-import "./App.css"
-import { Filter } from './components/Filter/Filter';
+import { Main } from './components/Main/Main';
 
 const App = () => (
 	<div className='App'>
-		<Filter />
+		<Main />
 	</div>
 );
 

@@ -1,0 +1,29 @@
+.input {
+	width: 626px;
+	height: 64px;
+	margin-top: 128px;
+	margin-bottom: 20px;
+	padding-left: 30px;
+	box-shadow: 0px 6px 10px 1px var(--shadow-color);
+	border: 1px solid #fff;
+	font-size: 22px;
+	font-weight: 700;
+	color: rgba(101, 110, 194, 1);
+	font-family: var(--font-family-main);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.input::placeholder {
+	color: rgba(101, 110, 194, 1);
+	opacity: 1;
+}
+
+.input:-ms-input-placeholder {
+	color: rgba(101, 110, 194, 1);
+}
+
+.input::-ms-input-placeholder {
+	color: rgba(101, 110, 194, 1);
+}

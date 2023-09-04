@@ -1,0 +1,25 @@
+import { ChangeEvent, FC, useState } from 'react';
+import styles from './Search.module.css';
+import { useDebounce } from '../debounce/debounce';
+import { RecordResults } from '../RecordResults/RecordResults';
+
+export const Search: FC = () => {
+	const [searchState, setSearchState] = useState('');
+
+	const debouncedSearchTerm = useDebounce(searchState, 1000);
+
+	return (
+		<>
+			<input
+				className={styles.input}
+				onChange={(e: ChangeEvent) =>
+					setSearchState((e.target as HTMLInputElement).value)
+				}
+				value={searchState}
+				type='text'
+				placeholder='Search jokes...'
+			/>
+			<RecordResults searchItem={debouncedSearchTerm} />
+		</>
+	);
+};

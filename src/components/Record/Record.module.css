@@ -1,0 +1,49 @@
+.record {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 518px;
+	min-height: 150px;
+	max-height: auto;
+	box-shadow: 0px 6px 10px 1px var(--shadow-color);
+	padding: 30px 30px 30px 25px;
+	margin-bottom: 20px;
+	text-decoration: none;
+	color: rgba(40, 38, 38, 1);
+}
+
+.record:nth-child(1) {
+	width: 788px;
+	height: 262px;
+	padding: 40px 40px 40px 25px;
+}
+
+.record:nth-child(2) {
+	width: 788px;
+	height: 262px;
+	padding: 40px 40px 40px 25px;
+}
+
+.record-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.record-text {
+	font-size: 20px;
+	text-align: left;
+	font-family: var(--font-family-main);
+}
+
+.record-id {
+	font-size: 14px;
+	opacity: 0.4;
+	font-family: var(--font-family-submain);
+}
+
+.record-time {
+	font-size: 14px;
+	opacity: 0.4;
+	color: #000;
+	font-family: var(--font-family-submain);
+}

@@ -1,0 +1,5 @@
+:root {
+	--font-family-main: 'Fira Sans', sans-serif;
+	--font-family-submain: consolas, 'Times New Roman', serif;
+	--shadow-color: rgba(100, 100, 111, 0.2);
+}

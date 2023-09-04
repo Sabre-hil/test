@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import styles from './Main.module.css';
-import { Filter } from '../Filter/Filter';
+import { Search } from '../Search/Search';
 
 export const Main: FC = () => (
-	<section className={styles.Main}>
-		<Filter />
+	<section className='container'>
+		<Search />
 	</section>
 );
