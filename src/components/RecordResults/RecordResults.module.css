@@ -9,4 +9,42 @@
 	margin-bottom: 60px;
 	font-family: var(--font-family-submain);
 	text-align: center;
+	margin: 0;
+	margin-bottom: 60px;
+}
+
+.error {
+	text-align: center;
+	color: rgba(101, 110, 194, 1);
+	font-size: 20px;
+}
+
+.loading {
+	text-align: center;
+	color: rgba(101, 110, 194, 1);
+	font-size: 20px;
+}
+
+@media (max-width: 576px) {
+	.found {
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+	.error {
+		text-align: center;
+		color: rgba(101, 110, 194, 1);
+		font-size: 16px;
+	}
+
+	.loading {
+		text-align: center;
+		color: rgba(101, 110, 194, 1);
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 424px) {
+	.found {
+		font-size: 12px;
+	}
 }

@@ -28,6 +28,7 @@ export const RecordResults: FC<RecordResultsProps> = ({
 			setSkip(true);
 		}
 	}, [searchItem]);
+
 	return (
 		<>
 			{jokes?.total ? (
@@ -35,8 +36,8 @@ export const RecordResults: FC<RecordResultsProps> = ({
 			) : (
 				<></>
 			)}
-			{isLoading ? <h1>Загрузка...</h1> : <></>}
-			{error ? <h1>ошибка</h1> : <></>}
+			{isLoading ? <h1 className={styles.loading}>Загрузка...</h1> : <></>}
+			{error ? <h1 className={styles.error}>ошибка</h1> : <></>}
 			<div className={styles.records}>
 				{jokes?.result.map(joke => <Record key={joke.id} joke={joke} />)}
 			</div>

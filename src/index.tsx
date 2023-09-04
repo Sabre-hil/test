@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom/client';
-import './global.css';
-import './normalize.css';
-import './variables.css';
-import './reset.css';
+import './styles/global.css';
+import './styles/normalize.css';
+import './styles/variables.css';
+import './styles/reset.css';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';

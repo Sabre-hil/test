@@ -27,3 +27,26 @@
 .input::-ms-input-placeholder {
 	color: rgba(101, 110, 194, 1);
 }
+
+@media (max-width: 940px) {
+	.input {
+		width: 70%;
+	}
+}
+
+@media (max-width: 576px) {
+	.input {
+		width: 70%;
+		height: 44px;
+		margin-top: 68px;
+		margin-bottom: 15px;
+		padding-left: 20px;
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 424px) {
+	.input {
+		font-size: 14px;
+	}
+}

@@ -4,7 +4,7 @@ export interface JokesFetchType {
 }
 
 export type IJoke = {
-	categories: any[];
+	categories: unknown[];
 	created_at: string;
 	icon_url: string;
 	id: string;
