@@ -31,13 +31,9 @@ export const RecordResults: FC<RecordResultsProps> = ({
 
 	return (
 		<>
-			{jokes?.total ? (
-				<p className={styles.found}>Found jokes: {jokes.total}</p>
-			) : (
-				<></>
-			)}
-			{isLoading ? <h1 className={styles.loading}>Загрузка...</h1> : <></>}
-			{error ? <h1 className={styles.error}>ошибка</h1> : <></>}
+			{jokes?.total && <p className={styles.found}>Found jokes: {jokes.total}</p>}
+			{isLoading && <h1 className={styles.loading}>Загрузка...</h1>}
+			{error && <h1 className={styles.error}>Произошла ошибка</h1>}
 			<div className={styles.records}>
 				{jokes?.result.map(joke => <Record key={joke.id} joke={joke} />)}
 			</div>
